@@ -83,4 +83,4 @@ production:
   <<: *default
   database: menu_api_production
   username: menu_api
-  password: <%= ENV['WAREHOUSE_ROUTING_DATABASE_PASSWORD'] %>
+  password: <%= ENV['MENU_API_DATABASE_PASSWORD'] %>
