@@ -35,10 +35,10 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - name: Start PostgreSQL
-      run: |
-        sudo service postgresql start
-        sudo -u postgres createuser --superuser "$USER"
+    # - name: Start PostgreSQL
+    #   run: |
+    #     sudo service postgresql start
+    #     sudo -u postgres createuser --superuser "$USER"
     - name: Run project setup
       run: bin/setup
     - name: Run tests
