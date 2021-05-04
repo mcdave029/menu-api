@@ -1,24 +1,24 @@
-# README
+# Menu API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple app using Rails framework with API only configuration.
 
-Things you may want to cover:
+The project is built with Ruby 3.0 and Rails 6.1
 
-* Ruby version
+### Dependencies
 
-* System dependencies
+* Ruby 3.0.0
+* NodeJS 14.16.1
+* Yarn 1.22.10
+* PostgreSQL 13.1
 
-* Configuration
+### Installation
 
-* Database creation
+* Run `bin/setup` this will install the necessary things to get you up and running.
 
-* Database initialization
+### Testing
 
-* How to run the test suite
+* Run `bundle exec rails test:all` this will run all the test cases.
 
-* Services (job queues, cache servers, search engines, etc.)
+### Technical Overview
 
-* Deployment instructions
-
-* ...
+Menus controller with action of `calculate_ids` accepts JSON data and computes the sum of menu objects ID that has a label.
